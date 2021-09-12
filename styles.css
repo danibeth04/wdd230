@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 h1, footer {
-    background-color: #2a9d8f;
+    background-color: #264653;
     padding: 10px;
 }
 h1, h2 {
@@ -10,21 +10,27 @@ h1, h2 {
 }
 h1 {
     font-size: 3em;
+    color: 
+    #2a9d8f;
 }
 h2 {
     font-size: 2em;
 }
 body {
     font-family: Roboto, san-serif;
-    color: #264653;
 }
 footer {
     font-family: Lora, serif;
+    color: #e9d8a6;
 }
 #headshot {
     max-width: 200px;
     float: right;
 }
 p.update {
-    color: #e9c46a;
+    color: #e9d8a6;
+}
+.link {
+    color: #e9d8a6;
+    text-decoration: underline;
 }
