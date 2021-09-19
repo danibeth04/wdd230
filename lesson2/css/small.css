@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto, san-serif;
+}
+main {
+    max-width: 767px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+section {
+    margin: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+    background-color: #eee;
+    border-radius:  10px;
+    border: solid 1pt;
+    border-color: #aaa;
+}
+h1, h2 {
+    font-family: Lora, serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+h3 {
+    background-color: #264653;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+footer {
+    font-family: Lora, serif;
+    color: #fff;
+    padding: 10px;
+    background-color: #264653;
+}
+img {
+    max-width: 333px;
+    margin: 10px;
+    border: solid 1pt;
+    border-color: #aaa;
+}
+p {
+    padding: 10px;
+}

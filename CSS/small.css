@@ -9,27 +9,27 @@ h1, h2 {
     font-weight: 900;
 }
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     color: 
-    #2a9d8f;
+    #fff;
 }
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 body {
     font-family: Roboto, san-serif;
 }
 footer {
     font-family: Lora, serif;
-    color: #e9d8a6;
+    color: #fff;
 }
 #headshot {
     max-width: 200px;
 }
 p.update {
-    color: #e9d8a6;
+    color: #fff;
 }
 .link {
-    color: #e9d8a6;
+    color: #fff;
     text-decoration: underline;
 }
