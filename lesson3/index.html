@@ -12,29 +12,32 @@
 </head>
 <body>
     <header>
-            <div class="logo">
-              <img
-                src="images/icon.png"
-                alt="Cartoon image of sun"
-              />
-            </div>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/target-audience.html">Target Audience</a></li>
-                <li><a href="html/color-scheme.html">Color Scheme</a></li>
-                <li><a href="html/typography.html">Typography</a></li>
-              </ul>
-            </nav>      
+      <h1>Weather U Like It</h1>
     </header>
+    <nav class="nav-bar">
+        <ul>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="html/target-audience.html">Target Audience</a></li>
+          <li class="nav-item"><a href="html/color-scheme.html">Color Scheme</a></li>
+          <li class="nav-item"><a href="html/typography.html">Typography</a></li>
+        </ul>
+    </nav>      
     <main>
-        <h1>Weather U Like It Website</h1>
         <h2>Site Purpose</h2>
         <p>The purpose of this site is to provide a landing page for a community of weather geeks/nerds (geekerds) who share events of interest (e.g. weather-related happenings) within the region.</p>
         <h2>Domain Name</h2>
         <p>www.weatherulikeit.com</p>
         <h2>Logo</h2>
-        <img src="images/icon.png" alt="Cartoon image of sun">
+        <img class="logo" src="images/icon.png" alt="Cartoon image of sun"/>
     </main>
-</body>
+    <footer>
+      <p>
+          &copy; <span id="year"></span> | Danielle E. Carriere | Montana  | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p> 
+      <p class="update">
+          Last Updated: <span id="lastUpdate"></span>
+      </p>
+   </footer>
+   <script src="JS/script.js"></script>
+  </body>
 </html>

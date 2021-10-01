@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typography</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <h1>Typography</h1>
-    <ul>
+    <header>
+        <h1>Weather U Like It</h1>
+      </header>
+      <nav class="nav-bar">
+          <ul>
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="../html/target-audience.html">Target Audience</a></li>
+            <li class="nav-item"><a href="../html/color-scheme.html">Color Scheme</a></li>
+            <li class="nav-item"><a href="../html/typography.html">Typography</a></li>
+          </ul>
+      </nav>
+      <main>   
+      <h2>Typography</h2>
+        <ul>
         <li>Main text: Roboto</li>
         <li>Headings: Lora</li>
     </ul>
-    
-</body>
+    </main> 
+    <footer>
+        <p>
+            &copy; <span id="year"></span> | Danielle E. Carriere | Montana  | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p> 
+        <p class="update">
+            Last Updated: <span id="lastUpdate"></span>
+        </p>
+     </footer>
+     <script src="../js/script.js"></script>
+  </body>
 </html>
