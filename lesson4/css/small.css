@@ -37,6 +37,9 @@ nav ul {
     padding: 1em;
     margin: 0;
 }
+nav ul.hide {
+    display: none;
+}
 nav ul li a {
     display: block;
     padding: .6rem 2%;
