@@ -3,13 +3,13 @@
         display: none;
     }
     nav ul.hide {
-        display: block;
-    }
+        display: flex;
+    }    
     nav ul {
         padding: 1em;
-        display: flex;
         align-items: center;
         justify-content: space-between;
+        display: flex;
     }
     nav ul li a {
         border-top: none;
