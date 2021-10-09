@@ -3,7 +3,6 @@
 header {
     align-items: center;  
     background-color: #264653;
-    display: flex-wrap;
 }
 .logo {
     max-width: 200px;
