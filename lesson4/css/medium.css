@@ -14,4 +14,7 @@
     nav ul li a {
         border-top: none;
     }
+    main {
+        max-width: 90%;
+    }
 }
