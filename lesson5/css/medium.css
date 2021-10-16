@@ -57,9 +57,7 @@
         font-weight: bold;
         box-shadow: 0 0 30px #333;
     }
-    .article {
-        width: 90%;
-    }
+
     .article img {
         height: 300px;
         object-fit: contain;
