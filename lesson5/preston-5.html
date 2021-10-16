@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <aside>
+        <span id="pancake-banner" onload="pancakeBanner()"></span>
+    </aside>
+    <header>
+        <img class="logo" src="images/icon.png" alt="logo">
+        <h1>Weather U Like It</h1>
+        <div class="motto">Weather News For Our Community</div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="preston-5.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>      
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="hero-div">
+            <img class="hero-img" src="images/hero-img.jpg" alt="Decorative map of Idaho">
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>High: <span id="high">61&deg;</span></p>
+                <p>Wind Chill: <span id="wind-chill">None</span></p>
+                <p>Humidity: <span id="humidity">42%</span></p>
+                <p>Wind Speed: <span id="wind-speed">8mph</span></p>
+            </section>
+        </div>
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-grid">
+                <div class="forecast-col">
+                    <span class="forecast-head">Sat</span>
+                    <img class="weather-img" src="images/sun.png" alt="sun">
+                    <span class="forecast-data">62&deg;F</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Sun</span>
+                    <img class="weather-img" src="images/cloudysun.png" alt="cloud with sun">
+                    <span class="forecast-data">66&deg;F</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Mon</span>
+                    <img class="weather-img" src="images/cloud.png" alt="cloud">
+                    <span class="forecast-data">61&deg;F</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Tue</span>
+                    <img class="weather-img" src="images/cloudysun.png" alt="cloud with sun">
+                    <span class="forecast-data">29&deg;F</span>
+                </div>
+                <div class="forecast-col">
+                    <span class="forecast-head">Wed</span>
+                    <img class="weather-img" src="images/cloudysun.png" alt="cloud with sun">
+                    <span class="forecast-data">56&deg;F</span>
+                </div>
+             </div>
+        </div>
+        <div class="article clearfix">
+            <img class="article-img" src="images/kitten.jpg" alt="kitten">
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed et itaque consequuntur voluptatibus recusandae nobis, provident, deserunt nostrum asperiores atque doloribus debitis ad laborum eum culpa perferendis? Atque, natus.
+            Necessitatibus, earum aperiam nisi, quos eaque odio reiciendis inventore sint rerum ipsa ad minima, ex consequuntur assumenda! Praesentium, vel non. Suscipit neque asperiores sint praesentium quis hic quos voluptatibus nam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequatur modi, laborum voluptates aperiam dolor? Alias, autem sed esse, ipsam quia magnam iste fuga consequatur optio cumque sunt ipsa! Pariatur.
+            Sapiente veniam temporibus nihil dolore ducimus voluptas et. Enim assumenda eligendi modi adipisci? Quaerat accusantium incidunt repellendus et commodi ipsam expedita ducimus nostrum, eos accusamus! Necessitatibus aliquid ullam sunt maxime.
+            </p>
+        </div>
+        <div class="contact">
+            <img class="map" src="images/preston.png" alt="map of preston">
+            <section class="contact-info">
+            <h3>Contact Us!</h3>
+            <p>999-999-9999</p>
+            <p>123 Preston Ave.</p>
+            <p>jane.doe@prestonid.gov</p>
+            <a href="http://www.facebook.com"><img class="icon" src="images/icon_fb.png" alt="facebook icon"></a>
+            <a href="http://www.instagram.com"><img class="icon" src="images/icon_ig.png" alt="instagram icon"></a>
+            <a href="http://www.youtube.com"></a><img class="icon" src="images/icon_yt.png" alt="youtube icon"></a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Danielle E. Carriere | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p> 
+        <p>
+            <span id="date" onload="Date()"></span>
+        </p>
+     </footer>
+     <script src="js/script.js"></script>
+  </body>
+</html>
