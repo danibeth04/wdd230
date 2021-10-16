@@ -44,7 +44,7 @@
         text-align: center;
     }
     .weather-img {
-        border-radius: 100p;
+        border-radius: 100px;
         padding: .5rem;
         align-self: center;
         max-width: 90%;
@@ -58,9 +58,10 @@
         box-shadow: 0 0 30px #333;
     }
 
-    .article img {
+    .article-img {
         height: 300px;
         object-fit: contain;
+        float: right;
     }
     .map {
         position: absolute;

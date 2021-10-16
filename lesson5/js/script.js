@@ -1,21 +1,17 @@
-
+// Add current date to footer
 const date = new Date();
 let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
 const now = date.toLocaleString('en-GB', options);
 document.getElementById("date").innerHTML = now;
 
+// Toggle hamburger meno on/off
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
 
-function pancakeBanner() {
-    let banner;
+// Turn pancake banner on/off
+    let banner = document.querySelector('#banner');
     let dayOfWeek = new Date().getDay();
     if (dayOfWeek == 5) {
-        banner = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."
+        banner.style.display = "block";
     }
-    else {
-        banner = ""
-    }
-    document.getElementById('pancake-banner').innerHTML = banner;
-}
