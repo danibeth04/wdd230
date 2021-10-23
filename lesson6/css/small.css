@@ -1,0 +1,182 @@
+
+#banner {
+    display: none;
+    background-color: #fdbf5e;
+    color: #000;
+    padding: .8rem;
+    text-align: center;
+    font-family: Lora, serif;
+    font-size: 2rem;
+}
+header {
+    align-items: center;  
+    background-color: #264653;
+}
+.logo {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 50%;
+}
+.motto {
+    color: white;
+    font-style: italic;
+    font-family: Roboto, san-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+nav button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+nav {
+    text-align: center;
+    margin-bottom: 1.5em;
+    background-color: #fdbf5e;
+}
+nav ul {
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+    white-space: nowrap;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
+}
+nav ul li a:hover {
+    background-color: #264653;
+    color: #fff;
+}
+.active {
+    background-color: #264653;
+    color: #fff;
+}
+body {
+    margin: 0;
+    font-family: Roboto, san-serif;
+}
+main {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, h3 {
+    font-family: Lora, serif;
+    font-weight: 900;
+    display: block;
+    margin-top: .5rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.article p {
+    padding-bottom: 1rem;
+}
+footer {
+    font-family: Lora, serif;
+    color: #fff;
+    background-color: #264653;
+    padding: .5rem;
+    text-align: center;
+}
+footer p a {
+    color: #fff;
+}
+.content-box {
+    background-color: #ccc;
+    border: 1px solid #000;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+.hero-div {
+    position: relative;
+}
+main figure.hero-img {
+    margin: 0 0 0 2%;
+}
+main figure.hero-img img {
+    width: 100%;
+}
+.hero-img {
+    display: flex;
+    width: 100%;
+    object-fit: none;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.weather-summary {
+    position: absolute;
+    border: none;
+    top: 25px;
+    right: 50px;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    background-color: #fff;
+    line-height: .5em;
+}
+.forecast {
+    display: none;
+}
+.article {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fdbf5e;
+    opacity: 1;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.article p {
+    width: 80%;
+    margin: 0 auto;
+}
+.article-img {
+    display: flex;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 0 1rem 2rem;
+}
+.map {
+    display: flex;    
+    max-height: 250px;
+    margin: 0 auto;
+}
+.contact h3 {
+    margin-top: 2rem;
+}
+.contact {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fdbf5e;
+    text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
