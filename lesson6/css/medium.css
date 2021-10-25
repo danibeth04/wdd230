@@ -57,7 +57,17 @@
         font-weight: bold;
         box-shadow: 0 0 30px #333;
     }
-
+    .weather-summary {
+        position: absolute;
+        border: none;
+        top: 25px;
+        right: 50px;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #333;
+        opacity: .9;
+        background-color: #fff;
+        line-height: .5em;
+    }
     .article-img {
         height: 300px;
         object-fit: contain;

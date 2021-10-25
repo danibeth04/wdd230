@@ -112,29 +112,23 @@ footer p a {
 .hero-div {
     position: relative;
 }
-main figure.hero-img {
-    margin: 0 0 0 2%;
-}
-main figure.hero-img img {
-    width: 100%;
-}
 .hero-img {
     display: flex;
-    width: 100%;
-    object-fit: none;
     margin: 0 auto;
     margin-bottom: 1rem;
+    max-width: 100%;
 }
 .weather-summary {
-    position: absolute;
+    margin: 0 auto;    
     border: none;
-    top: 25px;
-    right: 50px;
     padding: 1.5rem;
     box-shadow: 0 0 30px #333;
     opacity: .9;
     background-color: #fff;
     line-height: .5em;
+}
+.weather-summary h3 {
+    text-align: left;
 }
 .forecast {
     display: none;
