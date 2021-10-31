@@ -2,4 +2,9 @@
     main {
         max-width: 80%;
     }
+    /* Gallery page */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

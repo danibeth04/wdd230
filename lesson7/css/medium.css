@@ -84,6 +84,11 @@
     .contact-info {
         text-align: right;
     }
+    /* Gallery page */
+    .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
     .clearfix {
         overflow: auto;
     }
