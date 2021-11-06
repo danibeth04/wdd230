@@ -15,3 +15,12 @@ function toggleMenu() {
     if (dayOfWeek == 5) {
         banner.style.display = "block";
     }
+
+// Font
+WebFont.load({
+    google: {
+    families: [
+   'Lora', 'Roboto'
+    ]
+}
+});
