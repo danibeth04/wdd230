@@ -31,20 +31,20 @@
           <li><a href="preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li class="active"><a href="gallery-7.html">Gallery</a></li>
+          <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main class="clearfix">
-    <h1>Storm Center</h1>
+    <h1 class="storm-head">Storm Center</h1>
     <form method="get" action="thanks.html">
         <fieldset>
             <legend>Contact Information</legend>
-            <label class="top">Full Name* <input type="text" name="fname" required></label>
-            <label class="top">Email* <input type="email" name="email" placeholder="john.smith@gmail.com"></label>
-            <label class="top">Phone <input type="tel" name="phone" required></label>
-            <label class="top">Zip Code<input type="number" name="zip" required></label>
-            <label class="top">Storm Date<input type="date" name="storm-date"></label>
+            <label class="top">Full Name* <input type="text" pattern="[A-Za-z]+" minlength="5" name="fname" required></label>
+            <label class="top">Email <input type="email" name="email" placeholder="john.smith@gmail.com"></label>
+            <label class="top">Phone* <input type="tel" name="phone" required></label>
+            <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            <label class="top">Storm Date <input type="date" name="storm-date"></label>
         </fieldset>
         <fieldset>
             <legend>Storm Information</legend>
@@ -57,24 +57,19 @@
                     </select>
                 </label>
             <div>Storm Type</div>
-                <label><input type="checkbox" name="flash-flood" value="yes">Flash Flood</label>
-                <label><input type="checkbox" name="hail" value="yes">Hail</label>
-                <label><input type="checkbox" name="hurricane" value="yes">Hurricane</label>
-                <label><input type="checkbox" name="thunderstorm" value="yes">Thunderstorm</label>
-                <label><input type="checkbox" name="tornado" value="yes">Tornado</label>
+                <label class="sbs"><input type="checkbox" name="flash-flood" value="yes"> Flash Flood</label>
+                <label class="sbs"><input type="checkbox" name="hail" value="yes"> Hail</label>
+                <label class="sbs"><input type="checkbox" name="hurricane" value="yes"> Hurricane</label>
+                <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes"> Thunderstorm</label>
+                <label class="sbs"><input type="checkbox" name="tornado" value="yes"> Tornado</label>
             <div>Storm Severity</div>
-                <label><input type="range" id="rating" name="range" min="1" max="10" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">Range (1-10)</label>
+                <label><input type="range" id="rating" name="range" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
             <div>User In Danger?</div>
-                <label class="sbs"><input type="radio" name="user-in-danger" value="yes">Yes</label>
-                <label class="sbs"><input type="radio" name="user-in-danger" value="maybe">Maybe</label>
-                <label class="sbs"><input type="radio" name="user-in-danger" value="no">No</label>
+                <label class="sbs"><input type="radio" name="user-in-danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="user-in-danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="user-in-danger" value="no"> No</label>
             <div>Additional Information</div>
-                <label><input type="textarea" name="comment" placeholder="Add any additional comments/information here."></label>
-            <div>Software Needed</div>
-            <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-            <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-            <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
-            <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label><textarea rows="10" cols="50" name="comment" placeholder="Add any additional comments/information here."></textarea></label>
         </fieldset>
         <input type="submit" value="Submit Storm Information" class="submitBtn">
         </form>          

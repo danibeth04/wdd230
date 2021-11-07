@@ -43,7 +43,7 @@ function toggleMenu() {
         });
       }
 
-// Adjust rating display
+// Adjust rating display on storm center page
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
