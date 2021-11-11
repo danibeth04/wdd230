@@ -1,0 +1,14 @@
+@media only screen and (min-width: 60em){
+    main {
+        max-width: 80%;
+    }
+    /* Gallery page */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 #aaa;
+      }
+    
+}
