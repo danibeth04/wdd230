@@ -24,10 +24,7 @@ function toggleMenu() {
         image.removeAttribute('data-src');
       };
     };
-    imagesToLoad.forEach((img) => {
-        loadImages(img);
-      });
-      
+
     if('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((items, observer) => {
           items.forEach((item) => {
@@ -45,3 +42,11 @@ function toggleMenu() {
           loadImages(img);
         });
       }
+// Web Fonts
+WebFont.load({
+  google: {
+  families: [
+ 'Lora', 'Roboto'
+  ]
+}
+});
