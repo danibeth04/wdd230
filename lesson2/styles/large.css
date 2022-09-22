@@ -1,5 +1,14 @@
 @media (min-width: 65em) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: fit-content;
+        justify-items: space-between;
+    }
+    .item-c {
+        max-width: 320px;
+        grid-column: 3 /span 1;
+    }
+    .item-c img {
+        max-width: 300px;
     }
 }

@@ -4,13 +4,13 @@ main {
     font-family: Roboto, san-serif;
     color: #000;
     max-width: 900px;
-    margin: 10px;
+    margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr;
     padding: 10px;
+    justify-items: center;
 }
 header, footer {
-    background-color: #264653;
+    background-color: #000;
     padding: 10px;
     font-family: Lora, serif;
     color: #fff;
@@ -33,21 +33,20 @@ h2 {
 p {
     margin: 10px;
 }
+img {
+    max-width: 300px;
+    margin: 10px;
+    border: solid 1pt;
+    border-color: #aaa;
+}
 section {
-    margin: 0.5rem;
-    margin-top: 1rem;
+    margin: 10px 5px;
     padding: 10px;
     background-color: #eee;
     border: solid 1pt;
     border-color: #aaa;
     border-radius: 10px;
     max-width: 320px;
-}
-img {
-    max-width: 300px;
-    margin: 10px;
-    border: solid 1pt;
-    border-color: #aaa;
 }
 .link {
     color: #fff;
