@@ -1,10 +1,19 @@
 @media (min-width: 50em) {
     /* Header */
-
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header img {
+        max-width: 250px;
+    }
+    .social {
+        padding-right: 0;
+    };
 
     /* Navigation */
     .social {
-        max-width: 20%;
+        max-width: 50px;
     }
     nav button {
         display: none;
@@ -63,6 +72,6 @@
 
     /* Footer */
     footer img {
-        max-width: 90%;
+        max-width: 250px;
     }
 }
