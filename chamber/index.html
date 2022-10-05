@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Point of the Mountain Chamber of Commerce Site">
     <title>Point of the Mountain Chamber of Commerce Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,49 +14,89 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js"></script>
 </head>
 <body>
+<!--Header-->
     <header>
-        <img src="images/logo2.png" alt="Point of the Mountain logo">
+        <img id="headerLogo" src="images/logo2.png" alt="Point of the Mountain logo">
+        <section id="siteTitle">
         <h1>Point of the Mountain</h1>
-            <h2>Chamber of Commerce</h2>
-        <nav class="topnav">
-            <div><a href="#">Discover</a></div>
-            <div><a href="#">Directory</a></div>
-            <div><a href="#">Join</a></div>
-            <div><a href="#">Contact</a></div>
-            <div><a href="facebook.com"><img src="images/facebook.png" alt="facebook link" class="social"></a></div>
-            <div><a href="instagram.com"><img src="images/instagram.png" alt="instagram link" class="social"></a></div>
-        </nav>
-        <p>
-            <span id="today"></span>
-        </p>      
+        <h2>Chamber of Commerce</h2>
+        </section>
+    <!--Social icons-->
+    <ul class='social'>
+        <li><a href="facebook.com"><img src="images/facebook.png" alt="facebook link" class="social"></a></li>
+        <li><a href="instagram.com"><img src="images/instagram.png" alt="instagram link" class="social"></a></li>
+    </ul>
     </header>
+
+<!--Navigation-->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="hamburger" href=#>Menu</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<!--Today's date-->
+    <p id="dateSpan">Today's date is: 
+    <span id="today"></span>
+    </p>      
+
+<!--Main Content-->
     <main>
-        <section class="hero">
+        <section id="hero">
             <p>Hero with site name and call to action</p>
         </section>
-        <section class="event">
+        <section id="event">
             <p>Event</p>
         </section>
-        <section class="weather">
+        <section id="weather">
             <p>Weather</p>
         </section>
-        <section class="news">
+        <section id="news">
             <p>News Release</p>
         </section>
-        <section class="spotlight">
-            <p class="spot1">Spotlight 1</p>
-            <p class="spot2">Spotlight 2</p>
+        <section id="spotlight">
+            <p id="spot1">Spotlight 1</p>
+            <p id="spot2">Spotlight 2</p>
+            <p id="spot3">Spotlight 3</p>
         </section>
+        <section id="join">
+            <p>Join</p>
+        </section>        
     </main>
+
+<!--Footer-->
     <footer>
-        <p>
-            &copy; <span id="year"></span> | Danielle E. Carriere | Montana  | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a>
-            </p> 
-            <p>
-            Last Updated: <span id="lastUpdate"></span>
-            </p>    
+        <!--Class information-->
+        <section class="contactInfo">
+            <img src="images/logo2.png" alt="Point of the Mountain logo">
+            <section id="address">
+                <h2 class="address">Point of the Mountain Chamber of Commerce</h2>
+                <p>225 E. State RD.</p>
+                <p>Lehi, UT 84043</p>
+            </section>
+            <section id="contact">
+                <p>email@thepointchamber.com</p>
+                <p>(999) 999-9999</p>
+                <p>&#128205; Location Map</p>
+            </section>
+
+        </section>
+        <hr>
+        <section class="classInfo">
+            <p>&copy; <span id="year"></span><span> Point of the Mountain Chamber</p>
+            <p>Danielle Carriere</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span id="lastUpdate"></span></p>
+        </section>
     </footer>
 </body>
 </html>
