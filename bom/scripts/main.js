@@ -10,14 +10,14 @@ button.onclick = function() {
   const listText = document.createElement('span');
   const listBtn = document.createElement('button');
 
-  listItem.appendChild(listText);
+  listItem.append(listText);
   listText.textContent = myItem;
-  listItem.appendChild(listBtn);
-  listBtn.textContent = 'Delete';
-  list.appendChild(listItem);
+  listItem.append(listBtn);
+  listBtn.textContent = 	"\u274C";
+  list.append(listItem);
 
   listBtn.onclick = function(e) {
-    list.removeChild(listItem);
+    list.remove(listItem);
   }
 
   input.focus();
