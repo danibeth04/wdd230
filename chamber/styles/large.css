@@ -2,34 +2,30 @@
     /* Header */
     header {
         display: flex;
-        justify-content: space-between;
-        padding-right: 5px;
+        justify-content: space-around;
     }
     header img {
         max-width: 250px;
     }
-    .social {
-        padding-right: 0;
-    };
 
     /* Navigation */
-    .social {
-        max-width: 50px;
-    }
     nav button {
         display: none;
     }
-    nav ul.hide {
+    nav ul {
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: space-around;
+    }
+    nav ul.hide {
+        display: flex;
     }
     
     /* Main */
     main {
-        margin-right: 10px;
-        margin-left: 10px;
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
     }

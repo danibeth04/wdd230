@@ -7,6 +7,13 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+aside {
+    background-color: #264653;
+    color: #fff;
+    text-align: center;
+    font-family: Lora, serif;
+    padding: 10px;
+}
 /* Header */
 header {
     font-family: Lora, serif;
@@ -21,10 +28,11 @@ header {
     align-self: center;
 }
 .social {
-    max-width: 25%;
+    max-width: 30px;
     list-style: none;
     align-self: center;
     text-align: right;
+    padding-right: 10px;
 }
 
 /* Navigation */
@@ -82,7 +90,7 @@ nav a:hover {
 }
 
 /* Main content */
-h1, h2 {
+h1, h2, h3 {
     font-family: Lora, serif;
     margin: 10px;
 }
@@ -95,29 +103,31 @@ h2 {
 p {
     margin: 10px;
 }
-img {
-    margin: 10px;
+section {
+    margin: 5px;
 }
 #join {
     display: none;
 }
 .link {
-    color: #000;
+    color: #264653;
     text-decoration: underline;
 }
 #hero, #event, #weather, #news, #join {
     height: 200px;
     border: 1px solid black;
-    background-color: #aaa;
-    padding: 10px;
-    margin-top: 10px;
+    background-color: #264653;
 }
 #spotlight {
     height: 280px;
     border: 1px solid black;
-    background-color: #aaa;
+    background-color: #264653;
     padding: 10px;
     margin-top: 10px;   
+}
+.spotlightImage {
+    height: 100%;
+    width: auto;
 }
 #spot1, #spot2, #spot3 {
     height: 100px;
@@ -127,6 +137,36 @@ img {
 }
 #spot3 {
     display: none;
+}
+#hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#hero button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+#event img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#event p {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+#weather img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.weatherInfo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
 }
 
 /* Footer */
@@ -149,5 +189,5 @@ footer .address {
     font-size: .8em;    
 }
 .classInfo {
-    font-size: .6em;;
+    font-size: .8em;;
 }

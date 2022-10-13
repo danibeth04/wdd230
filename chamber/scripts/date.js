@@ -15,6 +15,15 @@ const options = {
 };
 today.textContent = date.toLocaleDateString("en-UK", options);
 
+//Banner
+let banner = document.getElementById("banner");
+let dayOfWeek = date.getDay();
+if (dayOfWeek == 1 || dayOfWeek == 2) {
+    banner.style.display = "block";
+} else {
+    banner.style.display = "none";
+}
+
 //create last-updated date for footer
 //look at code for formatting date from https://bobbyhadz.com/blog/javascript-format-date-mm-dd-yyyy-hh-mm-ss
 const lastUpdate = document.querySelector("#lastUpdate");
