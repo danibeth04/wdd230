@@ -2,9 +2,9 @@ const list = document.querySelector('ul');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
-button.onclick = function() {
+button.addEventListener("click", function() {
   let myItem = input.value;
-  input.value = '';
+  if (input.value != "") {
 
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
@@ -15,10 +15,10 @@ button.onclick = function() {
   listItem.append(listBtn);
   listBtn.textContent = 	"\u274C";
   list.append(listItem);
-
-  listBtn.onclick = function() {
+  
+  listBtn.addEventListener("click", function() {
     listItem.remove();
-  }
-
+  })};
   input.focus();
-}
+  input.value = "";
+});
