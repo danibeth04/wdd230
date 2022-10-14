@@ -16,8 +16,8 @@ button.onclick = function() {
   listBtn.textContent = 	"\u274C";
   list.append(listItem);
 
-  listBtn.onclick = function(e) {
-    list.remove(listItem);
+  listBtn.onclick = function() {
+    listItem.remove();
   }
 
   input.focus();
