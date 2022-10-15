@@ -56,11 +56,14 @@
     <main>
         <section id="hero">
             <img src="images/hero.jpg" alt="Sandstone cliffs">
-            <button>Join Now</button>
+            <button>Join the Chamber</button>
         </section>
         <section id="event">
             <img src="images/lights.jpg" alt="Christmas lights">
-            <p>Festival of Lights</p>
+            <div class="eventInfo">
+                <h3>Festival of Lights</h3>
+                <p>December 3rd on Main</p>
+        </div>
         </section>
         <section id="weather">
             <img src="images/weather.jpg" alt="Clouds and blue sky">
@@ -72,23 +75,38 @@
             </div>
         </section>
         <section id="news">
-            <h2>News Release</h2>
-            <h3>'Extremely aggressive' escaped rodeo bull remains at large in N.C.</h3>
+            <h3>News Release</h3>
             <p>An escaped rodeo bull described at dangerous and extremely aggressive remained at large in North Carolina on Saturday as officials searched for the 700-pound animal. <span class="link">Read more...</span></p>
         </section>
         <section id="spotlight">
+            <h3>Business Spotlight</h3>
             <section id="spot1">
-                <img src="images/borcelle.png" alt="Borcelle flower shop logo" class="spotlightImage" >
+                <img src="images/borcelle.png" alt="Borcelle flower shop logo" class="spotlightImage">
+                <div class="spotInfo">
+                    <h4>Borcelle Flowers</h4>
+                    <p>Phone: 999-999-9999</p>
+                </div>
             </section>
             <section id="spot2">
-                <img src="images/candle.png" alt="Candle company logo"class="spotlightImage" >
+                <img src="images/candle.png" alt="Candle company logo" class="spotlightImage"> 
+                <div class="spotInfo">
+                    <h4>CANDLES</h4>
+                    <p>Phone: 999-999-9999</p>
+                </div>
             </section>
             <section id="spot3">
-                <img src="images/academy.png" alt="Oliva Academy Logo"class="spotlightImage" >
+                <img src="images/academy.png" alt="Oliva Academy Logo" class="spotlightImage">
+                <div class="spotInfo">
+                    <h4>Oliva Academy</h4>
+                    <p>Phone: 999-999-9999</p>
+                </div>
             </section>
         </section>
         <section id="join">
-            <p>Join</p>
+            <div id="joinButton">
+                <button>Join</button>
+            </div>
+            <p>Learn more about joining the chamber of commerce!</p>
         </section>        
     </main>
 
@@ -111,7 +129,8 @@
         </section>
         <hr>
         <section class="classInfo">
-            <p>&copy; <span id="year"></span><span> Point of the Mountain Chamber</p>
+            <p>&copy; <span id="year"></span></p>
+            <p>Point of the Mountain Chamber</p>
             <p>Danielle Carriere</p>
             <p>WDD 230 Project</p>
             <p>Last Updated: <span id="lastUpdate"></span></p>

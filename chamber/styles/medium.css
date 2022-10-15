@@ -29,14 +29,43 @@
     #spotlight {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 140px;
+        height: 220px;
         grid-row-start: 3;
         grid-column: 1/4;
+        margin-bottom: 50px;
+    }
+    #spotlight h3 {
+        grid-column: 1/4;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #spot1, #spot2, #spot3 {
+        height: 200px;
+    }
+    .spotInfo {
+        display: none;
+    }
+    #spotlight img {
+        height: 200px;
+        margin: 0;
     }
     #join {
         display: block;
         grid-row-start: 4;
         grid-column: 1/4;
+        text-align: center;
+    }
+    #join button {
+        border: none;
+        background-color: #fdbf5e;
+        font-size: 1.2rem;
+        padding: 1rem 100px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    #join p {
+        color: #fbfbfb;
+        text-align: center;
     }
     #event {
         grid-row-start: 5;

@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 /* Main content */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Lora, serif;
     margin: 10px;
 }
@@ -110,31 +110,49 @@ section {
     display: none;
 }
 .link {
-    color: #264653;
+    color: #fdbf5e;
     text-decoration: underline;
 }
 #hero, #event, #weather, #news, #join {
     height: 200px;
-    border: 1px solid black;
+    border: none;
     background-color: #264653;
     position: relative;
 }
 #spotlight {
-    height: 280px;
-    border: 1px solid black;
-    background-color: #264653;
-    padding: 10px;
-    margin-top: 10px;   
+    margin-top: 10px;
+    height: 330px;
+/*    border: 1px solid #264653;*/
+    background-color: #fbfbfb;
+}
+#spotlight h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+#spotlight p {
+    font-size: .9rem;
 }
 .spotlightImage {
     height: 100%;
     width: auto;
+/*    margin: auto;
+    display: block;*/
+    float: left;
+    margin-right: 20px;
+}
+.spotlightImage:hover {
+    opacity: 0.5;
+    box-shadow: 5px 5px 5px #264653;
+}
+.spotInfo {
+    text-align: center;
+    padding: 30px;
 }
 #spot1, #spot2, #spot3 {
-    height: 100px;
-    border: 1px solid black;
-    padding: 10px;
-    margin-top: 10px;
+    height: 150px;
+    border: 1px solid #264653;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 #spot3 {
     display: none;
@@ -148,16 +166,29 @@ section {
     position: absolute;
     top: 25px;
     right: 25px;
+    background-color: #fdbf5e;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Lora, serif;
+    border: none;
+    border-radius: 10px;
+}
+#hero button:hover {
+    background-color: #78909960;
+    color: #fbfbfb;
 }
 #event img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#event p {
+.eventInfo {
     position: absolute;
     top: 25px;
     left: 25px;
+    color: #fff;
+    font-family: Lora, serif;
 }
 #weather img {
     height: 100%;
@@ -168,6 +199,15 @@ section {
     position: absolute;
     top: 25px;
     left: 25px;
+    background-color: rgba(255,255,255,.6);
+}
+#news {
+    background-color: #264653;
+    color: #fbfbfb;
+    padding: 15px;
+}
+#news h3 {
+    padding-bottom: 10px;
 }
 
 /* Footer */
@@ -181,13 +221,15 @@ footer h2 {
 }
 footer img {
     max-width: 20%;
-    margin-bottom: 0;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
 }
 footer .address {
     font-style: italic;
 }
 .contactInfo {
-    font-size: .8em;    
+    font-size: .8em;
 }
 .classInfo {
     font-size: .8em;;

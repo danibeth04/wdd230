@@ -31,17 +31,21 @@
     }
     #event {
         grid-area: 1/1/2/2;
+        height: 210px;
     }
     #hero {
         height: auto;
         grid-area: 1/2/3/4;
     }
     #spotlight {
-        height: auto;
+        height: 480px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-area: 1/4/4/5;
+    }
+    #spotlight h3 {
+        display: none;
     }
     #spot1 {
         grid-area: 1/1/2/2;
@@ -64,6 +68,7 @@
     }
     #news {
         grid-area: 3/2/4/4;
+        height: 170px;
     }
 
     /* Footer */
