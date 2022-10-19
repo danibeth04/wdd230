@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
     <aside id="banner">
@@ -23,7 +24,7 @@
     </aside>
 <!--Header-->
     <header>
-        <img id="headerLogo" src="images/logo2.png" alt="Point of the Mountain logo">
+        <img id="headerLogo" src="images/logo2.webp" alt="Point of the Mountain logo">
         <section id="siteTitle">
         <h1>Point of the Mountain</h1>
         <h2>Chamber of Commerce</h2>
@@ -55,7 +56,15 @@
 <!--Main Content-->
     <main>
         <section id="hero">
-            <img src="images/hero.webp" alt="Sandstone cliffs">
+<!--            <img src="images/hero.webp" alt="Sandstone cliffs">-->
+            <picture>
+                <img src="images/wdd230-org.jpg" alt="temporary replacement hero image" sizes="50vw" srcset="images/small.webp 200w, images/medium.webp 700w, images/large.webp 1100w">
+            </picture>
+            <figure class="myphoto">
+                <img src="images/golgotha.jpg" alt="golgotha" sizes="50vw" srcset="images/golgotha200.jpg 200w, images/golgotha500.jpg 500w, images/golgotha800.jpg 800w, images/golgotha1100.jpg 1100w">
+                <figcaption>The Garden Tomb</figcaption>
+            </figure>
+    
             <button>Join the Chamber</button>
         </section>
         <section id="event">
@@ -114,7 +123,7 @@
     <footer>
         <!--Class information-->
         <section class="contactInfo">
-            <img src="images/logo2.png" alt="Point of the Mountain logo">
+            <img src="images/logo2.webp" alt="Point of the Mountain logo">
             <section id="address">
                 <h2 class="address">Point of the Mountain Chamber of Commerce</h2>
                 <p>225 E. State RD.</p>
