@@ -85,4 +85,13 @@
     footer img {
         max-width: 250px;
     }
+
+    /* Discover Page */
+    .discover {
+        display: flex;
+        flex-direction: column;
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 #aaa;
+      }
 }

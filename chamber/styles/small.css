@@ -88,7 +88,14 @@ nav a:hover {
     font-family: Lora, serif;
     font-size: .9rem;
 }
-
+#last-visit-p {
+    text-align: center;
+    padding: 1rem;
+    background-color: #264653;
+    color: #fbfbfb;
+    font-family: Roboto, serif;
+    font-size: .8rem;
+}
 /* Main content */
 h1, h2, h3, h4 {
     font-family: Lora, serif;
@@ -234,3 +241,34 @@ footer .address {
 .classInfo {
     font-size: .8em;;
 }
+
+/* Discover Page */
+.discover-header {
+    display: block;
+    text-align: center;
+}
+.discover img {
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 #bbb;
+    transition: 0.3s;
+    overflow: hidden;
+    margin: 2%;
+}
+.caption {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Lora, serif;;
+}
+.fact {
+    font-size: 1.2 rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: Roboto, san-serif;
+}
+

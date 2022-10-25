@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Point of the Mountain Chamber of Commerce Site">
+    <title>Point of the Mountain Chamber of Commerce | Discover</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/lastvisit.js" defer></script>
+</head>
+<body>
+    <aside id="banner">
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </aside>
+<!--Header-->
+    <header>
+        <img id="headerLogo" src="images/logo2.webp" alt="Point of the Mountain logo">
+        <section id="siteTitle">
+        <h1>Point of the Mountain</h1>
+        <h2>Chamber of Commerce</h2>
+        </section>
+    <!--Social icons-->
+    <ul class='social'>
+        <li><a href="facebook.com"><img src="images/facebook.png" alt="facebook link" class="social"></a></li>
+        <li><a href="instagram.com"><img src="images/instagram.png" alt="instagram link" class="social"></a></li>
+    </ul>
+    </header>
+
+<!--Navigation-->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="./discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<!--Today's date-->
+    <p id="dateSpan"> 
+    <span id="today"></span>
+    </p>      
+
+<!--Main Content-->
+    <main class="discover">
+        <h2 class="discover-header">Discover Point of the Mountain</h2>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery1.jpg" alt="Rainbow Over Field">            
+                </picture>
+                <figcaption class="caption">Rainbow Over Field</figcaption>
+                <figcaption class="fact">POMFact: We are home to the number 1 private school in the nation!</figcaption>
+            </figure>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery2.jpg" alt="Snowcovered Mountains">            
+                </picture>
+                <figcaption class="caption">Snowcovered Mountains</figcaption>
+                <figcaption class="fact">POMFact: Our town population is 121,600, and about one third of our residents are families with children under the age of 18!</figcaption>
+            </figure>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery3.jpg" alt="Misty Mountains Surrounding Lake">            
+                </picture>
+                <figcaption class="caption">Misty Mountains Surrounding Lake</figcaption>
+                <figcaption class="fact">POMFact: We have over 180 days of sunny weather annually!</figcaption>
+            </figure>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery4.jpg" alt="Foggy Forest">            
+                </picture>
+                <figcaption class="caption">Foggy Forest</figcaption>
+                <figcaption class="fact">POMFact: Our town has one of the highest startup business success rates in the nation!</figcaption>
+            </figure>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery5.jpg" alt="Blue Skies, Clouds, and Grass">            
+                </picture>
+                <figcaption class="caption">Blue Skies, Clouds, and Grass</figcaption>
+                <figcaption class="fact">POMFact: Our average temperature is 56 degrees, but our temperatures range from 10 degrees in the winter and 98 in the summer!</figcaption>
+            </figure>
+            <figure class ="card">
+                <picture>
+                    <img src="images/gallery6.jpg" alt="Sunset Over Lake">            
+                </picture>
+                <figcaption class="caption">Sunset Over Lake</figcaption>
+                <figcaption class="fact">POMFact: Over half of our residents are skiers, and our public schools have FREE ski programs during the winter!</figcaption>
+            </figure>
+        </section>
+    </main>
+<!--Footer-->
+    <footer>
+        <!--Class information-->
+        <section class="contactInfo">
+            <img src="images/logo2.webp" alt="Point of the Mountain logo">
+            <section id="address">
+                <h2 class="address">Point of the Mountain Chamber of Commerce</h2>
+                <p>225 E. State RD.</p>
+                <p>Lehi, UT 84043</p>
+            </section>
+            <section id="contact">
+                <p>email@thepointchamber.com</p>
+                <p>(999) 999-9999</p>
+                <p>&#128205; Location Map</p>
+            </section>
+
+        </section>
+        <hr>
+        <section class="classInfo">
+            <p>&copy; <span id="year"></span></p>
+            <p>Point of the Mountain Chamber</p>
+            <p>Danielle Carriere</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span id="lastUpdate"></span></p>
+        </section>
+        <p id="last-visit-p"> It has been <span id="last-visit"></span> days since your last visit.</p>
+    </footer>
+</body>
+</html>
