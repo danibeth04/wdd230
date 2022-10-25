@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy Load Gallery</title>
     <link rel="stylesheet" href="lazyload.css">
+    <script src="lazyload.js" defer></script>
 </head>
 <body>
     <h1>Lazy Load Gallery</h1>
     <section class="gallery">
         <picture>
-           <img src="https://via.placeholder.com/300x400" data-src="https://www.fillmurray.com/300/400">
+            <img src="https://via.placeholder.com/300x400" data-src="https://www.fillmurray.com/300/400">
         </picture>
         <picture>
-            <img src="https://via.placeholder.com/300x400" data-src="https://www.fillmurray.com/g/300/400">            
+            <img src="https://via.placeholder.com/300x400"
+            data-src="https://www.fillmurray.com/g/300/400">            
         </picture>
         <picture>
             <img src="https://via.placeholder.com/300x400" data-src="https://www.loremflickr.com/300/400/dog">            
@@ -29,6 +31,5 @@
             <img src="https://via.placeholder.com/300x400" data-src="https://placekitten.com/g/300/400">            
         </picture>
     </section>
-    <script src="lazyload.js" defer></script>
 </body>
 </html>

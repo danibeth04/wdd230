@@ -4,7 +4,6 @@ h1 {
 .gallery {
     display: grid;
     grid-gap: 3px;
-    align-items: center;
     justify-items: center;
 }
 article img[data-src] {
