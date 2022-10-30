@@ -1,0 +1,22 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    padding: .5rem;
+    border: 1px solid black;
+}
+.title, .highlight {
+    background-color: darkgreen;
+    color: white;
+}
+.header-names {
+    background-color: lightseagreen;
+    font-weight: 700;
+}
+.data:nth-child(odd) {
+    background-color: lightgray;
+}
+.foot {
+    color: darkgreen;
+}
