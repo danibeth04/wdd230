@@ -1,5 +1,4 @@
 table {
-    border: 1px solid black;
     border-collapse: collapse;
 }
 td, th {
@@ -17,6 +16,6 @@ td, th {
 .data:nth-child(odd) {
     background-color: lightgray;
 }
-.foot {
+td.foot {
     color: darkgreen;
 }
