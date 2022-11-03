@@ -181,8 +181,17 @@ section {
     border: none;
     border-radius: 10px;
 }
+#hero button li {
+    list-style: none;
+}
 #hero button:hover {
     background-color: #78909960;
+}
+#hero button a {
+    text-decoration: none;
+    color: #000;
+}
+#hero button a:hover {
     color: #fbfbfb;
 }
 #event img {
