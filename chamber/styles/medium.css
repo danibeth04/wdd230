@@ -67,6 +67,12 @@
         color: #fbfbfb;
         text-align: center;
     }
+    #join li {
+        list-style: none;
+    }
+    #join a {
+        text-decoration: none;
+    }
     #event {
         grid-row-start: 5;
         grid-column: 1/3;
