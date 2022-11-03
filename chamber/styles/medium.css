@@ -99,4 +99,15 @@
         text-align: right;
         align-self: center;
     }
+
+    /* Join Page */
+    
+    #npDescription, #bronzeDescription, #silverDescription, #goldDescription {
+        display: block;
+        font-weight: 400;
+        font-size: .8rem;
+        margin-left: 0;
+    }
+
 }
+

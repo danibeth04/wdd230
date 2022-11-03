@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Point of the Mountain Chamber of Commerce Site">
+    <title>Point of the Mountain Chamber of Commerce | Join</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lastvisit.js" defer></script>
+</head>
+<body>
+    <aside id="banner">
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </aside>
+<!--Header-->
+    <header>
+        <img id="headerLogo" src="images/logo2.webp" alt="Point of the Mountain logo">
+        <section id="siteTitle">
+        <h1>Point of the Mountain</h1>
+        <h2>Chamber of Commerce</h2>
+        </section>
+    <!--Social icons-->
+    <ul class='social'>
+        <li><a href="facebook.com"><img src="images/facebook.png" alt="facebook link" class="social"></a></li>
+        <li><a href="instagram.com"><img src="images/instagram.png" alt="instagram link" class="social"></a></li>
+    </ul>
+    </header>
+
+<!--Navigation-->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<!--Today's date-->
+    <p id="dateSpan"> 
+    <span id="today"></span>
+    </p>      
+
+<!--Main Content-->
+    <main class="joinPage">
+        <h2>Application to Join the POM Chamber of Commerce</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="myhandle@gmail.com" required></label>
+                <label class="top">Cell Number*<input type="tel" placeholder="555-555-5555" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name*<input type="text" required></label>
+                <label class="top">Business Position<input type="text" name="title" pattern="[A-Za-z -]"></label>
+                <label class="top">Business Description<textarea name="descript"></textarea></label>
+            </fieldset>
+            <fieldset id="tierOptions">
+                <legend>Select Membership Tier</legend>
+                <section class="radio-options">
+                    <label class="sbs"><input type="radio" name="membership" value="np">Non profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver">Silver</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold">Gold</label>
+                </section>
+                <section id="descriptions">
+                <section id="npDescription">
+                    <h3>Non Profit: Free</h3>
+                    <p>Non profit organizations receive the same benefits as our Bronze tier members!</p>
+                </section>
+                <section id="bronzeDescription">
+                    <h3>Bronze Tier: $100/year</h3>
+                    <p>Bronze members have access to monthly B2B meetings and trainings!</p>
+                </section>
+                <section id="silverDescription">
+                    <h3>Silver Tier: $250/year</h3>
+                    <p>Silver members have access to all Bronze tier benefits. In addition, they receive a discount on all formal events.</p>
+                </section>
+                <section id="goldDescription">
+                    <h3>Gold Tier: $500/year</h3>
+                    <p>Gold members have access to all Silver tier benefits. In addition, they receive advertising discounts and a spotlight on the chamber's homepage.</p>
+                </section>
+                </section>
+            </fieldset>
+            <input type="hidden" id="dateStamp" name="dateStamp">
+            <input type="submit" value="Apply to Join" id="joinBtn">
+        </form>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <!--Class information-->
+        <section class="contactInfo">
+            <img src="images/logo2.webp" alt="Point of the Mountain logo">
+            <section id="address">
+                <h2 class="address">Point of the Mountain Chamber of Commerce</h2>
+                <p>225 E. State RD.</p>
+                <p>Lehi, UT 84043</p>
+            </section>
+            <section id="contact">
+                <p>email@thepointchamber.com</p>
+                <p>(999) 999-9999</p>
+                <p>&#128205; Location Map</p>
+            </section>
+
+        </section>
+        <hr>
+        <section class="classInfo">
+            <p>&copy; <span id="year"></span></p>
+            <p>Point of the Mountain Chamber</p>
+            <p>Danielle Carriere</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span id="lastUpdate"></span></p>
+        </section>
+        <p id="last-visit-p"> It has been <span id="last-visit"></span> days since your last visit.</p>
+    </footer>
+</body>
+</html>

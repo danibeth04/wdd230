@@ -272,3 +272,51 @@ footer .address {
     font-family: Roboto, san-serif;
 }
 
+/* Join Page */
+.joinPage h2 {
+    text-align: center;
+    padding: 1rem;
+}
+fieldset {
+    padding: .5rem;
+    margin: 1rem;
+    font-family: Lora, serif;
+    font-weight: 700;
+}
+legend {
+    margin-left: .5rem;
+}
+input, textarea {
+    display: block;
+    padding: .5rem;
+}
+label {
+    font-weight: 400;
+}
+textarea {
+    height: 200px;
+    width: 95%;
+}
+.top {
+    display: block;
+    padding: .5rem;
+}
+.sbs {
+    display: flex;
+    width: 150px;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+input[type="radio"] {
+    margin-right: .5rem;
+}
+#joinBtn {
+    margin-left: 1rem;
+    font-weight: 700;
+}
+#tierOptions {
+    display: flex;
+}
+#npDescription, #bronzeDescription, #silverDescription, #goldDescription {
+    display: none;
+}

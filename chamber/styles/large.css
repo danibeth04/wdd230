@@ -95,3 +95,11 @@
         box-shadow: 0 8px 16px 0 #aaa;
       }
 }
+
+/* Join Page */
+.joinPage {
+    display: block;
+}
+.joinPage h2 {
+    display: block;
+}
