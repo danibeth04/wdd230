@@ -329,3 +329,8 @@ input[type="radio"] {
 #npDescription, #bronzeDescription, #silverDescription, #goldDescription {
     display: none;
 }
+
+/* Directory Page */
+.directory img {
+    width: 200px;
+}
