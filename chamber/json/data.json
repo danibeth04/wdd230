@@ -1,0 +1,85 @@
+{
+    "directory": [
+      {
+        "name": "Oliva Academy",
+        "address": "19 Academy Way",
+        "phone": "111-111-1111",
+        "url": "www.oliva-academy.edu",
+        "membership": "Gold",
+        "established": 2020,
+        "imagesrc": "images/academy.png"
+      },
+      {
+        "name": "Borcelle Flower Shop",
+        "address": "101 W. Main Street, Ste. 5A",
+        "phone": "222-222-2222",
+        "url": "www.borcelle-flowers.com",
+        "membership": "Gold",
+        "established": 1987,
+        "imagesrc": "images/borcelle.png"
+      },
+      {
+        "name": "The Candle Shop",
+        "address": "204 E. Main",
+        "phone": "333-333-3333",
+        "url": "www.pomcandles.com",
+        "membership": "Gold",
+        "established": 2017,
+        "imagesrc": "images/candle.png"
+      },
+      {
+        "name": "Cuppa Cafe",
+        "address": "78 Tracy Ave.",
+        "phone": "444-444-4444",
+        "url": "www.cuppacafe.com",
+        "membership": "Bronze",
+        "established": 2012,
+        "imagesrc": "images/cuppa.png"
+      },
+      {
+        "name": "Big Dipper Icecream",
+        "address": "891 College St.",
+        "phone": "555-555-5555",
+        "url": "www.bigdippericecream.com",
+        "membership": "Bronze",
+        "established": 2011,
+        "imagesrc": "images/dipper.png"
+      },
+      {
+        "name": "Forks Up",
+        "address": "213 E. Main",
+        "phone": "666-666-6666",
+        "url": "www.forksup.com",
+        "membership": "Bronze",
+        "established": 2022,
+        "imagesrc": "images/forksup.png"
+      },
+      {
+        "name": "Mishka",
+        "address": "674 S. 11th Ave.",
+        "phone": "777-777-7777",
+        "url": "www.mishka-clothing.com",
+        "membership": "Silver",
+        "established": 2018,
+        "imagesrc": "images/mishka.png"
+      },
+      {
+        "name": "The Print Shop",
+        "address": "901 Babcock St.",
+        "phone": "888-888-8888",
+        "url": "www.theprintshoppom.com",
+        "membership": "Bronze",
+        "established": 2004,
+        "imagesrc": "images/printshop.png"
+      },
+      {
+        "name": "Starlight Dance Co.",
+        "address": "403 N. 19th Ave.",
+        "phone": "999-999-9999",
+        "url": "www.starlightdance.com",
+        "membership": "Silver",
+        "established": 1987,
+        "imagesrc": "images/starlight.png"
+      }
+    ]
+}
