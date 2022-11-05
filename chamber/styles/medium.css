@@ -131,5 +131,14 @@
         font-size: .9rem;
         margin-top: 1rem;
     }
+
+    /* Directory Page */
+    .directory .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .directory img {
+        display: inline;
+    }
 }
 

@@ -335,6 +335,16 @@ input[type="radio"] {
 }
 
 /* Directory Page */
+.directory h2 {
+    text-align: center;
+}
+.directory #grid, #list {
+    width: 50px;
+}
+.directory .cards {
+    display: flex;
+    flex-direction: column;
+}
 .directory img {
-    width: 200px;
+    height: 200px;
 }

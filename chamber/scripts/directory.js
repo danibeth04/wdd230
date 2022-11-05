@@ -14,7 +14,7 @@ fetch(requestURL)
 function showBusiness(business) {
     // Create elements to add to document
     let card = document.createElement('section');
-    let name = document.createElement('h2');
+    let name = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let url = document.createElement('p');
@@ -36,12 +36,10 @@ function showBusiness(business) {
     img.setAttribute("loading", "lazy");
 
     // Add/append the section(card) with the h2 element
+    card.appendChild(img)
     card.appendChild(name)
     card.appendChild(address)
     card.appendChild(phone)
     card.appendChild(url)
-    card.appendChild(membership)
-    card.appendChild(established)
-    card.appendChild(img)
     document.querySelector('div.cards').appendChild(card)
 };

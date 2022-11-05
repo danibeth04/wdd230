@@ -94,9 +94,9 @@
     .card:hover {
         box-shadow: 0 8px 16px 0 #aaa;
       }
-}
 
-/* Join Page */
-.joinPage h2 {
-    display: block;
+    /* Join Page */
+    .directory .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
