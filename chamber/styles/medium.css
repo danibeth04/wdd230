@@ -108,13 +108,28 @@
     }
 
     /* Join Page */
-    
+    main.joinPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+    .joinPage h2 {
+        display: block;
+        grid-row-start: 1;
+        grid-column: 1/3;
+    }
+    form {
+        grid-column: 1/2;
+    }
+    #descriptions {
+        grid-column: 2/3;
+    }
     #npDescription, #bronzeDescription, #silverDescription, #goldDescription {
         display: block;
         font-weight: 400;
-        font-size: .8rem;
         margin-left: 0;
+        font-size: .9rem;
+        margin-top: 1rem;
     }
-
 }
 
