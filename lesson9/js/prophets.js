@@ -10,6 +10,16 @@ fetch(requestURL)
         const prophets = jsonObject['prophets'];
         prophets.forEach(displayProphets);
     });
+/*
+async function getProphets() {
+    const response = await fetch(requestURL);
+    if (response.ok) {
+    const data = await response.json();
+    data.prophets.forEach(prophet => {
+        displayProphets(prophet)
+    });
+};
+*/
     
 function displayProphets(prophet) {
     // Create elements to add to document

@@ -338,13 +338,35 @@ input[type="radio"] {
 .directory h2 {
     text-align: center;
 }
-.directory #grid, #list {
-    width: 50px;
+.directory .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
-.directory .cards {
+#gridBtn, #listBtn {
+    padding: 1rem;
+    margin: 5px;
+}
+.cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: .9rem;
+}
+.cards section {
+    margin-top: 2rem;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 .directory img {
-    height: 200px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #ccc;
 }

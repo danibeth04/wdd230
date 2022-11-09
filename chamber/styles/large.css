@@ -95,8 +95,19 @@
         box-shadow: 0 8px 16px 0 #aaa;
       }
 
-    /* Join Page */
+    /* Directory Page */
+    .directory {
+        grid-template-columns: 1fr;
+    }
     .directory .cards {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .directory h2 {
+        grid-row-start: 1;
+        grid-column: 1/4;
+    }
+    .directory .buttons {
+        grid-row-start: 2;
+        grid-column: 1/4;
     }
 }

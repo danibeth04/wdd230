@@ -1,6 +1,7 @@
 // Store the URL of the JSON file
 const requestURL = 'json/data.json';
 
+// Get JSON data
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -10,7 +11,8 @@ fetch(requestURL)
         const business = jsonObject['business'];
         business.forEach(showBusiness);
     });
-    
+
+// Create and display "cards" for each business
 function showBusiness(business) {
     // Create elements to add to document
     let card = document.createElement('section');
@@ -24,11 +26,11 @@ function showBusiness(business) {
 
     //change the textContent property of the h2 element to contain the business' name and info
     name.textContent = `${business.name}`
-    address.textContent = `Address: ${business.address}`
-    phone.textContent = `Phone: ${business.phone}`
-    url.textContent = `Website: ${business.url}`
-    membership.textContent = `Membership Tier: ${business.membership}`
-    established.textContent = `Established: ${business.established}`
+    address.textContent = `${business.address}`
+    phone.textContent = `${business.phone}`
+    url.textContent = `${business.url}`
+    membership.textContent = `${business.membership}`
+    established.textContent = `${business.established}`
     
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values
     img.setAttribute('src', business.imagesrc)
@@ -42,4 +44,22 @@ function showBusiness(business) {
     card.appendChild(phone)
     card.appendChild(url)
     document.querySelector('div.cards').appendChild(card)
+};
+
+// Transition between grid and list format
+const gridButton = document.querySelector("gridBtn");
+const listButton = document.querySelector("listBtn");
+const display = document.querySelector("#cards");
+
+// Using arrow function
+gridButton.addEventListener("click", () => {
+    display.classList.add("cards");
+    display.classList.remove("list");
+});
+
+// Without arrow function
+listButton.addEventListener("click", showList);
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("cards");
 };
