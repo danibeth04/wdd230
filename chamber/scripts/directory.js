@@ -47,9 +47,9 @@ function showBusiness(business) {
 };
 
 // Transition between grid and list format
-const gridButton = document.querySelector("gridBtn");
-const listButton = document.querySelector("listBtn");
-const display = document.querySelector("#cards");
+const gridButton = document.querySelector("#gridBtn");
+const listButton = document.querySelector("#listBtn");
+const display = document.querySelector("article");
 
 // Using arrow function
 gridButton.addEventListener("click", () => {
