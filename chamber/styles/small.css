@@ -366,8 +366,13 @@ input[type="radio"] {
 }
 .list {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    margin: 0 auto;
+}
+.list p {
+    text-align: left;
+}
+.list h3 {
+    text-align: left;
 }
 .list img {
     display: none;
