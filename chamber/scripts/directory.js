@@ -44,7 +44,8 @@ function showBusiness(business) {
     card.appendChild(phone)
     card.appendChild(url)
     document.querySelector('div.cards').appendChild(card)
-};
+}
+
 
 // Transition between grid and list format
 const gridButton = document.querySelector("#gridBtn");
@@ -56,10 +57,16 @@ gridButton.addEventListener("click", () => {
     display.classList.add("cards");
     display.classList.remove("list");
 });
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("cards");
+});
 
+/*
 // Without arrow function
 listButton.addEventListener("click", showList);
 function showList() {
     display.classList.add("list");
     display.classList.remove("cards");
 };
+*/

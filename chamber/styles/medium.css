@@ -133,12 +133,14 @@
     }
 
     /* Directory Page */
-    .directory .cards {
+    .directory .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
-    .directory img {
-        display: inline;
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
     }
 }
 

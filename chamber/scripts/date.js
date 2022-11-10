@@ -28,7 +28,3 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
 //look at code for formatting date from https://bobbyhadz.com/blog/javascript-format-date-mm-dd-yyyy-hh-mm-ss
 const lastUpdate = document.querySelector("#lastUpdate");
 lastUpdate.innerHTML = date.toLocaleDateString("en-UK", options);
-
-//hidden dateStamp
-const dateStamp = document.querySelector("#dateStamp");
-dateStamp.innerHTML = date.toLocaleDateString("en-UK", options);
