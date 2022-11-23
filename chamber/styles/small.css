@@ -65,6 +65,9 @@ nav li {
     flex: 1 1 auto;
     list-style: none;
 }
+li.active {
+    text-decoration: overline;
+}
 nav a {
     display: block;
     color: #fbfbfb;
@@ -392,4 +395,12 @@ input[type="radio"] {
 }
 .list img {
     display: none;
+}
+
+/* Contact Page */
+.contact p, h2 {
+    text-align: center;
+}
+#messageBtn {
+    margin-left: 1rem;
 }
