@@ -24,36 +24,36 @@ async function apiFetch() {
     }
 }
 
-// Function to get temperature and windspeed, and calculate windchill
-function windChill() {
-    //let currentTemp = 40;
-    //let windSpeed = 8;
-    //let windChill;
-    if (windSpeed > 3 && currentTemp <= 50) {
-        windChill = 35.74 + 0.6215 * currentTemp - 35.75 * windSpeed ** 0.16 + 0.4275 * currentTemp * windSpeed ** 0.16;
+// Calculate wind chill
+function windChill(speed, temp) {
+    if (speed > 3 && temp <= 50) {
+        windChill = 35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16;
     } else {
-        windChill = "NA";
+        windChill = "N/A";
     }
-    //document.getElementById("temp").innerHTML = currentTemp;
-    //document.getElementById("speed").innerHTML = windSpeed;
-    //document.getElementById("chill").innerHTML = windChill.toFixed(1);
     return windChill;
+}
+
+// Capitalize weather description
+function capitalize(string) {
+    return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
 }
 
 // Function to display data
 function displayResults(weatherData) {
-    // icon and current weather condition
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = `${weatherData.weather[0].description}`;
-    icon.setAttribute('src', iconsrc);
-    icon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-    // temperature
+    // current temp display
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    // wind speed
+    // weather description and icon display
+    const desc = capitalize(weatherData.weather[0].description);
+    captionDesc.textContent = desc;
+    weatherIcon.src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    weatherIcon.alt = desc;
+    // wind speed display
     windSpeed.innerHTML = `${weatherData.wind.speed}`;
-    // wind chill
-    chill.innerHTML = windChill();
+    // wind chill display
+    temp = weatherData.main.temp;
+    speed = weatherData.wind.speed;
+    chill.innerHTML = windChill(speed, temp).toFixed(0);
 }
 
-  apiFetch();
+apiFetch();
