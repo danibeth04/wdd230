@@ -10,7 +10,7 @@ fetch(requestURL)
          //console.table(jsonObject); // checking for valid response and data parsing
         const business = jsonObject['business'];
         // Filter by gold status
-        let gold = business.filter(tier => tier.membership == 'Gold');
+        let gold = business.filter(tier => tier.membership == 'Gold' || tier.membership== 'Silver');
         //console.table(gold); // check whether filter is working as it should
         // Call spotlight function for each element with class "spotSection"
         document.querySelectorAll('.spotSection').forEach(business => {
