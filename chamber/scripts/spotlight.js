@@ -1,5 +1,6 @@
 // Store the URL of the JSON file
 const requestURL = 'json/data.json';
+let numSpots = 3;
 
 // Get JSON data
 fetch(requestURL)
@@ -10,40 +11,40 @@ fetch(requestURL)
          //console.table(jsonObject); // checking for valid response and data parsing
         const business = jsonObject['business'];
         // Filter by gold status
-        let gold = business.filter(tier => tier.membership == 'Gold' || tier.membership== 'Silver');
+        let gold = business.filter(tier => tier.membership == 'Gold');
         //console.table(gold); // check whether filter is working as it should
-        // Call spotlight function for each element with class "spotSection"
-        document.querySelectorAll('.spotSection').forEach(business => {
-            spotlight(gold);
-        });
-});
+        spotlight(gold,numSpots);
+    });
 
-// Select random business to spotlight
-function spotlight(gold) {
-    let spot = gold[Math.floor(Math.random() * gold.length)];
-    //console.log(spot); //check whether random object is being called
+// Select 3 random businesses to spotlight
+function spotlight(gold, numSpots) {
+    //Select one spotlight: let spots = gold[Math.floor(Math.random() * gold.length)];
+    // Select multiple businesses to spotlight (Resource: https://bobbyhadz.com/blog/javascript-get-multiple-random-elements-from-array)
+    let shuffled = [...gold].sort(() => 0.5 - Math.random());
+    let spots = shuffled.slice(0,numSpots);
     // Call display function
-    display(spot);
+    display(spots);
 }
 
-// Create and display spotlights for selected business
-function display(spot) {
+// Create and display spotlight cards for selected business
+function display(spots) {
     // Create elements to add to document
+    let card = document.createElement('div');
     let name = document.createElement('h4');
     let phone = document.createElement('p');
     let logo = document.createElement('img');
 
     //change the textContent property of the h4 and p elements to contain the business' names and phone numbers
-    name.textContent = spot.name;
-    phone.textContent = spot.phone;
+    name.textContent = spots.name;
+    phone.textContent = spots.phone;
     
-    // Build the image attributes by using the setAttribute method for the src and alt attribute values
-    logo.src = spot.imagesrc;
-    logo.alt = spot.name;
+    // Build the image attributes
+    logo.src = spots.imagesrc;
+    logo.alt = spots.name;
 
-    // Add the name, logo, and image elements
-    document.querySelector('.spotlightImage').appendChild(logo);
-    document.querySelector('.businessName').appendChild(name);
-    document.querySelector('.businessPhone').appendChild(phone);
+    // Append the section card
+    card.appendChild(logo);
+    card.appendChild(name);
+    card.appendChild(phone);
+    document.querySelector('div.spotCards').appendChild(card);
 }
-
