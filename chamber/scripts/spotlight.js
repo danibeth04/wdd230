@@ -28,23 +28,25 @@ function spotlight(gold, numSpots) {
 
 // Create and display spotlight cards for selected business
 function display(spots) {
+    spots.forEach(spots => {
     // Create elements to add to document
     let card = document.createElement('div');
-    let name = document.createElement('h4');
-    let phone = document.createElement('p');
+    //let name = document.createElement('h4');
+    //let phone = document.createElement('p');
     let logo = document.createElement('img');
 
     //change the textContent property of the h4 and p elements to contain the business' names and phone numbers
-    name.textContent = spots.name;
-    phone.textContent = spots.phone;
+    //name.textContent = spots.name;
+    //phone.textContent = spots.phone;
     
     // Build the image attributes
     logo.src = spots.imagesrc;
     logo.alt = spots.name;
+    logo.className = "spotlightImage";
 
     // Append the section card
     card.appendChild(logo);
-    card.appendChild(name);
-    card.appendChild(phone);
-    document.querySelector('div.spotCards').appendChild(card);
-}
+    //card.appendChild(name);
+    //card.appendChild(phone);
+    document.querySelector('div.spotCards').appendChild(card);        
+})};

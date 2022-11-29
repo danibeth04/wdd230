@@ -1,4 +1,4 @@
-@media (min-width: 32.5em) {
+@media (min-width: 42em) {
     
     /* Header */
     .social {
@@ -28,26 +28,20 @@
     }
     #spotlight {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         height: 220px;
         grid-row-start: 3;
         grid-column: 1/4;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
-    #spotlight h3 {
-        grid-column: 1/4;
-        margin-top: 10px;
-        margin-bottom: 20px;
+    .spotCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
     }
-    #spot1, #spot2, #spot3 {
+    .spotlightImage {
         height: 200px;
-    }
-    .spotInfo {
-        display: none;
-    }
-    #spotlight img {
-        height: 200px;
-        margin: 0;
+        margin: 10px;
     }
     #join {
         display: block;

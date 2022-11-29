@@ -129,43 +129,20 @@ section {
     background-color: #264653;
     position: relative;
 }
-#spotlight {
+.spotCards {
+    display: flex;
     margin-top: 10px;
-    height: 330px;
-/*    border: 1px solid #264653;*/
-    background-color: #fbfbfb;
-}
-#spotlight h3 {
-    text-align: center;
-    margin-top: 20px;
-}
-#spotlight p {
-    font-size: .9rem;
+    height: 110px;
+    justify-content: space-around;
 }
 .spotlightImage {
     height: 100%;
     width: auto;
-/*    margin: auto;
-    display: block;*/
-    float: left;
-    margin-right: 20px;
+    border: 1px solid #264653;
 }
 .spotlightImage:hover {
     opacity: 0.5;
     box-shadow: 5px 5px 5px #264653;
-}
-.spotInfo {
-    text-align: center;
-    padding: 30px;
-}
-#spot1, #spot2, #spot3 {
-    height: 150px;
-    border: 1px solid #264653;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-#spot3 {
-    display: none;
 }
 #hero img {
     height: 100%;
