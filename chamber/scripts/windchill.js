@@ -53,7 +53,7 @@ function displayResults(weatherData) {
     // wind chill display
     temp = weatherData.main.temp;
     speed = weatherData.wind.speed;
-    chill.innerHTML = windChill(speed, temp).toFixed(0);
+    chill.innerHTML = windChill(speed, temp);
 }
 
 apiFetch();
