@@ -10,12 +10,21 @@
 }
 
 /* Navigation */
+.menuBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
 nav ul {
     list-style-type: none;
     background-color: #e99ea6;
     display: flex;
     justify-content: space-around;
     padding-left: 0;
+}
+nav ul.hide {
+    display: none;
 }
 nav ul li {
     padding: 1rem;
