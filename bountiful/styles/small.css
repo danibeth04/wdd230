@@ -1,0 +1,122 @@
+/* Body */
+
+/*
+
+/* Header */
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    background-color: #e99ea6;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+nav ul li {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+}
+nav ul li:hover {
+    background-color: #5c9c36;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Main */
+main {
+    margin: 0 auto;
+    max-width: 90%;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #d41e0f;
+}
+p {
+    font-family: Lato, sans-serif;
+}
+main img {
+    max-width: 100%;
+}
+
+#weather, #callToAction {
+    height: 300px;
+    padding-bottom: 50px;
+    position: relative;
+}
+#weather img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+figure {
+    margin: 0;
+    padding: 10px;
+}
+.forecast {
+    height: 240px;
+    width: 25%;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-family: Lato, sans-serif;
+    background-color: #ffffff90;
+    text-align: center;
+}
+.forecast figure img {
+    max-width: 50px;
+}
+#callToAction img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.orderInfo {
+    height: 240px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    margin-top: 10px;
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    background-color: #ffffff90;
+}
+#createDrink {
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0;
+}
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #e99ea6;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons img {
+    width: 40px;
+    margin: 20px 30px 10px;
+}
+.contactInfo {
+    text-align: center;
+    font-size: .8rem;
+    padding-bottom: 20px;
+}
+.contactInfo h2 {
+    color: #000;
+}
