@@ -30,7 +30,7 @@ function capitalize(string) {
 // Function to display data
 function displayResults(weatherData) {
     // current temp display
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
     // weather description and icon display
     const desc = capitalize(weatherData.weather[0].description);
     captionDesc.textContent = desc;

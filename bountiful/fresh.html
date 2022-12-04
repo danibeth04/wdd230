@@ -1,46 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bountiful Foods Organic Produce; Organic produce in Carlsbad, California">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Bountiful Foods Organic Produce; Organic produce in Carlsbad, California'>
     <title>Bountiful Foods | Fresh</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel='icon' href='images/favicon.png' type='image/x-icon'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='styles/small.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
 </head>
 <body>
 <!--Header-->
-<img class="logo" src="images/logo.png" alt="Bountiful Foods logo">
+<img class='logo' src='images/logo.png' alt='Bountiful Foods logo'>
 <!--Navigation-->
 <nav>
-    <button class='menuBtn'>&#9776;</button>
-    <ul id="mainNav" class="hide">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="fresh.html">Fresh</a></li>
-        <li><a href="about.html">About</a></li>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id='mainNav' class='hide'>
+        <li><a href='index.html'>Home</a></li>
+        <li class='active'><a href='fresh.html'>Fresh</a></li>
+        <li><a href='about.html'>About</a></li>
     </ul>
 </nav>
 
 
 <!--Main Content-->
-<main>
-
+<main class='freshPage'>
+    <h2>Create your new favorite fruit drink!</h2>
+    <form method='get' action='thankyou.html'>
+        <fieldset>
+            <legend>Your Info &#127793;</legend>
+            <label class='top'>First Name*<input type='text' name='fname' required></label>
+            <label class='top'>Email*<input type='email' name='email' placeholder='bountifulfruits@gmail.com' required></label>
+            <label class='top'>Cell Number*<input type='tel' placeholder='111-111-1111' required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose Your Fruits &#127793;</legend>
+            <section>
+                <select class='fruitOptions'>
+                    <option></option>
+                </select>
+                <select class='fruitOptions'>
+                    <option></option>
+                </select>
+                <select class='fruitOptions'>
+                    <option></option>
+                </select>
+            </section>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instructions &#127793;</legend>
+            <textarea></textarea>
+        </fieldset>
+        <input type='submit' value='Create Your Drink!' id='drinkBtn'>
+    </form>
 </main>
 
 <!--Footer-->
 <footer>
-    <div class="socialIcons">
-        <a href="#"><img src="images/facebook.png" alt="Facebook logo"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram logo"></a>
-        <a href="#"><img src="images/tiktok.png" alt="Tiktok icon"></a>
+    <div class='socialIcons'>
+        <a href='#'><img src='images/facebook.png' alt='Facebook logo'></a>
+        <a href='#'><img src='images/instagram.png' alt='Instagram logo'></a>
+        <a href='#'><img src='images/tiktok.png' alt='Tiktok icon'></a>
     </div>
-    <div class="contactInfo">
+    <div class='contactInfo'>
         <h2>Bountiful Foods</h2>
         <p>111 E. Main St. | Carlsbad, CA</p>
         <p>111-111-1111</p>
@@ -48,7 +75,7 @@
 </footer>
 
 <!-- Javascript -->
-<script src="scripts/menu.js"></script>
+<script src='scripts/menu.js'></script>
  
 </body>
 </html>

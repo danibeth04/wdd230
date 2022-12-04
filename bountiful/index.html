@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bountiful Foods Organic Produce; Organic produce in Carlsbad, California">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Bountiful Foods Organic Produce; Organic produce in Carlsbad, California'>
     <title>Bountiful Foods | Home</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel='icon' href='images/favicon.png' type='image/x-icon'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='styles/small.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
 </head>
 <body>
 <!--Header-->
-<img class="logo" src="images/logo.png" alt="Bountiful Foods logo">
+<img class='logo' src='images/logo.png' alt='Bountiful Foods logo'>
 <!--Navigation-->
 <nav>
-    <button class='menuBtn'>&#9776;</button>
-    <ul id="mainNav" class="hide">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="fresh.html">Fresh</a></li>
-        <li><a href="about.html">About</a></li>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id='mainNav' class='hide'>
+        <li class='active'><a href='index.html'>Home</a></li>
+        <li><a href='fresh.html'>Fresh</a></li>
+        <li><a href='about.html'>About</a></li>
     </ul>
 </nav>
 
 
 <!--Main Content-->
 <main>
-    <section id="summary">
+    <section id='summary'>
         <h2>About Carlsbad, CA</h2>
         <p>Carlsbad is a coastal city in the North County region of San Diego County, California, United States. The city is 87 miles south of downtown Los Angeles and 35 miles north of downtown San Diego. As of the 2020 census, the population of the city was 114,746. Carlsbad is a popular tourist destination and home to many businesses in the golf industry.</p>
     </section>
-    <section id="weather">
+    <hr>
+    <section id='weather'>
         <h2>3-Day Forecast</h2>
-        <img src="images/weather.webp" alt="A lemon tree on a rainy day">
-        <div class="forecast">
+        <div class='forecast'>
             <figure>
-                <img src="" alt="" id="icon">
+                <img src='' alt='' id='icon'>
                 <figcaption></figcaption>
             </figure>
-            <p>Temp: <span id="temp"></span>&#8457;</p>
-            <p>Humidity: <span id="humidity"></span></p>
+            <p>Temp: <span id='temp'></span>&#8457;</p>
+            <p>Humidity: <span id='humidity'></span></p>
         </div>
     </section>
-    <section id="callToAction">
-        <h2>Create your own specialty fruit drink!</h2>
-        <img src="images/order.webp" alt="A glass mug with water, strawberries, watermelon, and ice">
-        <div class="orderInfo">
-            <p>You have ordered <span id="numDrinks"></span>specialty drinks.</p>
+    <hr>
+    <section id='callToAction'>
+        <img src='images/order.webp' alt='A glass mug with water, strawberries, watermelon, and ice'>
+        <div class='orderInfo'>
+            <p>You have ordered <span id='numDrinks'></span>specialty drinks.</p>
         </div>
-        <form action="fresh.html">
-            <button id="createDrink" type="submit">Order now!</button>
+        <form action='fresh.html'>
+            <button id='createDrink' type='submit'>Order now!</button>
         </form>
     </section>
 </main>
 
 <!--Footer-->
 <footer>
-    <div class="socialIcons">
-        <a href="#"><img src="images/facebook.png" alt="Facebook logo"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram logo"></a>
-        <a href="#"><img src="images/tiktok.png" alt="Tiktok icon"></a>
+    <div class='socialIcons'>
+        <a href='#'><img src='images/facebook.png' alt='Facebook logo'></a>
+        <a href='#'><img src='images/instagram.png' alt='Instagram logo'></a>
+        <a href='#'><img src='images/tiktok.png' alt='Tiktok icon'></a>
     </div>
-    <div class="contactInfo">
+    <div class='contactInfo'>
         <h2>Bountiful Foods</h2>
         <p>111 E. Main St. | Carlsbad, CA</p>
         <p>111-111-1111</p>
@@ -73,8 +73,8 @@
 </footer>
 
 <!-- Javascript -->
-<script src="scripts/menu.js"></script>
-<script src="scripts/weather.js"></script>
+<script src='scripts/menu.js' defer></script>
+<script src='scripts/weather.js'></script>
  
 </body>
 </html>
