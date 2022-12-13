@@ -76,6 +76,7 @@ main img {
 }
 .forecast div {
     background-color: #5c9c3685;
+    padding-top: .5rem;
     padding-bottom: .5rem;
     margin-bottom: .5rem;
 }
@@ -136,6 +137,9 @@ footer {
 }
 .contactInfo h2 {
     color: #000;
+}
+.contactInfo hr {
+    border: .5px solid #000;
 }
 
 /* Fresh Page */

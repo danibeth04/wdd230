@@ -14,7 +14,7 @@ fetch(url)
       return response.json();
   })
   // Create option element for each fruit and add to the selection list  
-  .then(function(jsonObject) {  
+    .then(function(jsonObject) {  
     let option;
     for (let i = 0; i < jsonObject.length; i++) {
       option = document.createElement('option');
