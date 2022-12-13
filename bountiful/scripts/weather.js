@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#icon');
 const captionDesc = document.querySelector('figcaption');
 
 // API url for Carlsbad, CA with units in Fahrenheit (imperial) and my API ID
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&limit=5&appid=2340469801d84310f9502eb72c4ba29c';
+const url = 'https://api.openweathermap.org/data/3.0/onecall?q=Carlsbad&units=imperial&limit=3&appid=c4b2978f4d109ec57cf2c9b8cd059fce'
 
 // Function to fetch API
 async function apiFetch() {

@@ -1,14 +1,9 @@
-//Coding reference: https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
+// Coding references: 
+// https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
+// https://stackoverflow.com/questions/9895082/javascript-populate-drop-down-list-with-array
 
 // Select all elements with class fruitOptions
 let options = document.querySelector('fruitOptions');
-options.length = 0;
-
-// Append default option
-let defaultOption = document.createElement('option');
-defaultOption.text = 'Select Fruit';
-options.add(defaultOption);
-options.selectedIndex = 0;
 
 // Store URL of JSON file
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
@@ -18,13 +13,44 @@ fetch(url)
   .then(function(response) {  
       return response.json();
   })
-      // Create option element for each fruit and add to the selection list  
-      .then(function(jsonObject) {  
-        let option;
-    	for (let i = 0; i < jsonObject.length; i++) {
-          option = document.createElement('option');
-      	  option.text = jsonObject[i].name;
-      	  options.add(option);
-    	}    
-});  
+  // Create option element for each fruit and add to the selection list  
+  .then(function(jsonObject) {  
+    let option;
+    for (let i = 0; i < jsonObject.length; i++) {
+      option = document.createElement('option');
+      option.textContent = jsonObject[i].name;
+      options.add(option);
+  }    
+});
+
+// Create function to display order
+function displayOrder() {
+  // Create elements to add to document
+  let name = document.createElement('p');
+  let email = document.createElement('p');
+  let phone = document.createElement('p');
+  let fruitChoice = document.createElement('p');
+  let date = document.createElement('p');
+  let carbs = document.createElement('p');
+  let protein = document.createElement('p');
+  let fat = document.createElement('p');
+  let sugar = document.createElement('p');
+  let calories = document.createElement('p');
+
+
+  // Change the textContent property of the p elements to contain all order info
+  name.textContent = `Name: ${name}`;
+  email.textContent = `Email: ${email}`;
+  phone.textContent = `Phone: ${phone}`;
+  fruitChoice.textContent = `Fruits: ${fruitChoice}`;
+  date.textContent = `Date: ${date}`;
+  carbs.textContent = `Total Carbs: ${fruit.carbs}`;
+  protein.textContent = `Total Protein: ${fruit.protein}`;
+  fat.textContent = `Total Fat: ${fruit.fat}`;
+  sugar.textContent = `Total Sugar: ${fruit.sugar}`;
+  calories.textContent = `Total Calories: ${fruit.calories}`;
+
+  // Display order info when order is submitted
+
+}
 
