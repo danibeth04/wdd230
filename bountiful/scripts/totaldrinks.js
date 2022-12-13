@@ -1,3 +1,5 @@
+/*
+
 // get value from html
 const totalDrinks = document.querySelector('#numDrinks');
 
@@ -16,3 +18,5 @@ const addOrder = () => {
 totalDrinks.innerHTML = drinksOrdered;
 
 // need to link this to the fresh page
+
+*/

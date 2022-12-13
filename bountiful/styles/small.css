@@ -74,6 +74,15 @@ main img {
     font-family: Lato, sans-serif;
     text-align: center;
 }
+.forecast div {
+    background-color: #5c9c3685;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+.forecast h3 {
+    color: #000;
+    font-family: Lato, sans-serif;
+}
 .forecast figure img {
     max-width: 60px;
 }
