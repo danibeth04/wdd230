@@ -1,4 +1,4 @@
-const lastUpdate = document.querySelector("#lastUpdate");
+const lastUpdate = document.querySelector(".lastUpdate");
 const options = {
     weekday: "long",
     day: "numeric",

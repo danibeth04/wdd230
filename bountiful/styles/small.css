@@ -22,7 +22,8 @@ nav button {
 nav ul {
     list-style-type: none;
     background-color: #e99ea6;
-    display: flex-column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding-left: 0;
 }

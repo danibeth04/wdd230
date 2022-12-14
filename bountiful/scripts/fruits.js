@@ -3,7 +3,7 @@
 // https://stackoverflow.com/questions/9895082/javascript-populate-drop-down-list-with-array
 
 // Select all elements with class fruitOptions
-let options = document.querySelector('fruitOptions');
+let fruitOptions = document.querySelector('fruitOptions');
 
 // Store URL of JSON file
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
@@ -11,17 +11,18 @@ const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 // Get JSON data
 fetch(url)  
   .then(function(response) {  
-      return response.json();
-  })
   // Create option element for each fruit and add to the selection list  
-    .then(function(jsonObject) {  
+    response.json().then(function(jsonObject) {  
     let option;
     for (let i = 0; i < jsonObject.length; i++) {
       option = document.createElement('option');
       option.textContent = jsonObject[i].name;
-      options.add(option);
+      option.label = jsonObject[i].name;
+      fruitOptions.add(option);
   }    
 });
+})
+
 /*
 // Create function to display order
 function displayOrder() {
