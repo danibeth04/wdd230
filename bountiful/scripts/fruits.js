@@ -23,7 +23,7 @@ fetch(url)
 });
 })
 
-/*
+
 // Create function to display order
 function displayOrder() {
   // Create elements to add to document
@@ -54,4 +54,4 @@ function displayOrder() {
   // Display order info when order is submitted
 
 }
-*/
+
